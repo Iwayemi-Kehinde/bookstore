@@ -5,6 +5,6 @@ import App from "./App.js"
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <RouterProvider router={router}>
-    <App />
+    <App /> 
   </RouterProvider>
 )

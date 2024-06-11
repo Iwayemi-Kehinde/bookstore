@@ -1,7 +1,14 @@
-import React from "react"
+import React from "react";
+import Banner from "../components/Banner";
+import FavouriteBooks from "./FavouriteBooks";
 
 const Home = () => {
-  <div>Home</div>
-}
+  return (
+    <>
+      <Banner />
+      <FavouriteBooks />
+    </>
+  );
+};
 
-export default Home
+export default Home;

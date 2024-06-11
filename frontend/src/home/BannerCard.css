@@ -1,0 +1,46 @@
+.banner .swiper {
+  width: 240px;
+  height: 320px;
+}
+
+.banner .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.banner .swiper-slide:nth-child(1n) {
+  background-color: red;
+}
+
+.banner .swiper-slide:nth-child(2n) {
+  background-color: blue;
+}
+
+.banner .swiper-slide:nth-child(3n) {
+  background-color: violet;
+}
+
+.banner .swiper-slide:nth-child(4n) {
+  background-color: orange;
+}
+
+.banner .swiper-slide:nth-child(5n) {
+  background-color: green;
+}
+
+.banner .swiper-slide:nth-child(6n) {
+  background-color: grey;
+}
+
+.banner .swiper-slide:nth-child(7n) {
+  background-color: purple;
+}
+
+.banner .swiper-slide:nth-child(8n) {
+  background-color: slateblue;
+}

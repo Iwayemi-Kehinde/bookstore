@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom"
+import { createBrowserRouter } from "react-router-dom"
 import App from "../App.js"
 import Home from "../home/Home"
 import Shop from "../shop/Shop"
@@ -25,6 +25,11 @@ export const router = createBrowserRouter([
       {
         path: "/blog",
         element: <Blog />
+      },
+      {
+        path: "/book/:id",
+        element: <SingleBook />,
+        loader: ({params}) => fetch(`localhost:3000/book/${params.id}`)
       }
     ]
   }
