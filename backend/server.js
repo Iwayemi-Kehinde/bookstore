@@ -78,7 +78,6 @@ async function run() {
       const id = req.params.id;
       const filter = { _id: new ObjectId(id) };
       const result = await bookCollections.deleteOne(filter);
-      console.log(filter);
       res.send(result);
     });
 
@@ -95,10 +94,11 @@ async function run() {
 
     //get a single book
 
-    app.get("/book/:id", async () => {
+    app.get("/book/:id", async (req, res) => {
       const { id } = req.params;
       const filter = { _id: new ObjectId(id) };
       const result = await bookCollections.findOne(filter);
+      res.send(result)
     });
 
     //send a ping to confirm sucessful connection
